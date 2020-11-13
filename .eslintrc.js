@@ -21,10 +21,12 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
-    project: './tsconfig.json',
+    project: './__tests__/tsconfig.json',
   },
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off', //["error", { "prefixWithI": "always" }]
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-  },
+    "no-unused-vars": "off",
+    '@typescript-eslint/no-unused-vars': "off",
+    '@typescript-eslint/no-unused-vars-experimental': ["error"]
+  }
 }
