@@ -2,15 +2,15 @@
   "name": "ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
     "lint": "eslint src __tests__",
-    "compile:watch": "tsc --watch --incremental --noEmit",
+    "compile:watch": "npx tsc --build __tests__/tsconfig.json --watch",
     "compile": "tsc",
-    "watch": "nodemon --ext ts,js,json,properties --exec",
-    "prepare": "concurrently \"npm test\" \"npm run lint\" && tsc"
+    "prepare": "npm run compile",
+    "prepublish": "npm run test && npm run lint"
   },
   "keywords": [],
   "author": "",
