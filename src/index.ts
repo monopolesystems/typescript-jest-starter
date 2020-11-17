@@ -1,1 +1,1 @@
-function Hel(params: type) {}
+function hello() {}

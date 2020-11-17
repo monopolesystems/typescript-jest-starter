@@ -62,6 +62,7 @@
   },
   "exclude": [
     "__data__",
-    "__tests__"
+    "__tests__",
+    "__mocks__"
   ],
 }
