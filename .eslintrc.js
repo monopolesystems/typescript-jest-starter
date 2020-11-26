@@ -25,10 +25,13 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off', //["error", { "prefixWithI": "always" }]
+    '@typescript-eslint/no-floating-promises': 'error',
     "no-unused-vars": "off",
     '@typescript-eslint/no-unused-vars': "off",
     '@typescript-eslint/no-unused-vars-experimental': ["error"],
-    'mo-underscore-dangle': "off"
+    'no-underscore-dangle': 'off',
+    'import/named': 'off',
+    'require-await': 'error'
 
   }
 }
